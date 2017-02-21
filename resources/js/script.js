@@ -224,7 +224,6 @@ NPCs.push({
 });
 
 var success = ((Math.random()*(100/((1/1*5)*10)) <= NPCs[0].level));
-alert(success);
 
 
 // -------------- HANDLERS -------------- //
