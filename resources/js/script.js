@@ -197,7 +197,7 @@ function calcQuestStats(){
 	var qType = questType[$("select#questType option:checked").val()];
     var qObjective = questObjective[$("select#questType option:checked").val()][$("select#questObjective option:checked").val()];
     var qLocation = questLocation[$("select#questLocation option:checked").val()];
-
+    
     var qDifficulty = (qType.difficultyMod * qObjective.difficultyMod * qLocation.difficultyMod).toFixed(2);
 	var qExperience = (qType.expMult * qObjective.expMult * qLocation.expMult).toFixed(2);
     var qDiff = document.createElement("span");
@@ -223,7 +223,8 @@ NPCs.push({
     level: 1
 });
 
-NPCs
+var success = ((Math.random()*(100/((1/1*5)*10)) <= NPCs[0].level));
+alert(success);
 
 
 // -------------- HANDLERS -------------- //
