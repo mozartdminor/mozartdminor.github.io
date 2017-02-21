@@ -1,0 +1,14 @@
+#questBoardTable {
+    border: 1px solid #000;
+    padding: 2px;
+    border-radius: 10px;
+}
+#questBoardTable tr:nth-child(even) {
+    background-color: #CCCCCC;
+}
+#questBoardTable tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+#questBoardTable tr td {
+    text-align: center;
+}

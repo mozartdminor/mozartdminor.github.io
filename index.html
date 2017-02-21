@@ -1,0 +1,27 @@
+<html>
+  <head>
+      <script type="text/javascript" src="resources/js/script.js"></script>
+      <script type"text/javascript" src="resources/js/jquery-3.1.1.min.js"></script>
+      <link href="resources/css/style.css">
+  </head>
+  <body>
+    <h3>Quest Selection</h3>
+    <select id="questType">
+        <option value="escort">Please escort</option>
+        <option value="fetch">Please fetch</option>
+        <option value="kill">Please kill</option>
+        <option value="clear">Please clear</option>
+        <option value="slay">Please slay</option>
+    </select><br />
+    Difficulty: <span id="qDiff">0</span> | Exp. Multiplier: <span id="qExp">0</span><br />
+    <button id="makeQuest">Post this Quest</button>
+    <h3>Quests Posted</h3>
+    Lines: <select id="questLength">
+        <option value="5">5</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+    <div id="questBoard">&nbsp;</div>
+  </body>
+</html>
